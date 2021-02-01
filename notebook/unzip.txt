@@ -1,0 +1,10 @@
+!sudo apt-get update
+!sudo apt-get install wget
+!wget --load-cookies tmpcookies.txt httpsdocs.google.comucexport=download&confirm=$(wget --quiet --save-cookies tmpcookies.txt --keep-session-cookies --no-check-certificate 'httpsdocs.google.comucexport=download&id=1AL0Rh5mjPgQH3pKrWqJlxVcbuAgXbON7' -O-  sed -rn 's.confirm=([0-9A-Za-z_]+).1np')&id=1AL0Rh5mjPgQH3pKrWqJlxVcbuAgXbON7 -O data.zip && rm -rf tmpcookies.txt
+from zipfile import ZipFile
+with ZipFile('.data.zip', 'r') as zipObj
+    print(Started unzipping... n)
+    # Extract all the contents of zip file in current directory
+    zipObj.extractall()
+    print(Files unziped sucessfullyn)
+!ls
